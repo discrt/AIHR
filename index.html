@@ -503,7 +503,7 @@
 						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 75%; height: auto;" controls controlsList="nodownload" preload="none">
 							<source id="mp4_src" src="videos/eng.mp4" type="video/mp4">
 						</video>
-						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">हिंदी में सुनो</button>
+						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">Listen in हिंदी</button>
 						<script>
 						var vid = document.getElementById("myVideo");
 						var statusElement = document.getElementById("status");
@@ -524,7 +524,7 @@
 							} else {
 								vid.src = src1;
 								currentlyPlaying = 1;
-								button.innerHTML="हिंदी में सुनो";
+								button.innerHTML="Listen in हिंदी";
 							}
 							vid.load();
 							vid.addEventListener('loadedmetadata', function () {
