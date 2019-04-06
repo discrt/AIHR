@@ -486,7 +486,7 @@
 			<!-- Title section -->
 			<div class="flex-col-c-c p-b-50">
 				<h3 class="t1-b-1 cl-3 txt-center m-b-11">
-					HALLMARKING PROCESS BRIEF: <br>
+					GOLD JEWELLERY HALLMARKING PROCESS BRIEF: <br>
 					For Consumer Awareness -
 				</h3>
 
@@ -503,7 +503,7 @@
 						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 75%; height: auto;">
 							<source id="mp4_src" src="videos/eng.mp4" type="video/mp4">
 						</video>
-						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">Watch in Hindi</button>
+						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">Listen in Hindi</button>
 						<script>
 						var vid = document.getElementById("myVideo");
 						var statusElement = document.getElementById("status");
@@ -520,11 +520,11 @@
 							if (currentlyPlaying === 1) {
 								vid.src = src2;
 								currentlyPlaying = 2;
-								button.innerHTML="Watch in English";
+								button.innerHTML="Listen in English";
 							} else {
 								vid.src = src1;
 								currentlyPlaying = 1;
-								button.innerHTML="Watch in Hindi";
+								button.innerHTML="Listen in Hindi";
 							}
 							vid.load();
 							vid.addEventListener('loadedmetadata', function () {
