@@ -480,7 +480,7 @@
 		</div>
 	</section>
 
-	<!-- Why chosse us -->
+	<!-- Why choose us -->
 	<section class="bg-12 p-t-92 p-b-70">
 		<div class="container">
 			<!-- Title section -->
@@ -504,10 +504,10 @@
 					</div>
 					<center>
 						<br>
-						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 100%; height: auto;">
+						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 75%; height: auto;">
 							<source id="mp4_src" src="videos/eng.mp4" type="video/mp4">
 						</video>
-						<button onclick="myFunction()" type="button" class="btn-block btn-info">Change Language</button>
+						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">Watch in Hindi</button>
 						<script>
 						var vid = document.getElementById("myVideo");
 						var statusElement = document.getElementById("status");
@@ -523,9 +523,11 @@
 							if (currentlyPlaying === 1) {
 								vid.src = src2;
 								currentlyPlaying = 2;
+								document.getElementById("buttonLang").value="Watch in English";
 							} else {
 								vid.src = src1;
 								currentlyPlaying = 1;
+								document.getElementById("buttonLang").value="Watch in Hindi";
 							}
 							vid.load();
 							vid.addEventListener('loadedmetadata', function () {
