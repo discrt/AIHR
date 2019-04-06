@@ -513,6 +513,7 @@
 						var statusElement = document.getElementById("status");
 						var currentlyPlaying = 1;
 						var currentlPlayingTime;
+						var button= document.getElementById("buttonLang");
 
 						var src1 = "videos/eng.mp4";
 
@@ -523,11 +524,11 @@
 							if (currentlyPlaying === 1) {
 								vid.src = src2;
 								currentlyPlaying = 2;
-								document.getElementById("buttonLang").value="Watch in English";
+								button.innerHTML="Watch in English";
 							} else {
 								vid.src = src1;
 								currentlyPlaying = 1;
-								document.getElementById("buttonLang").value="Watch in Hindi";
+								button.innerHTML="Watch in Hindi";
 							}
 							vid.load();
 							vid.addEventListener('loadedmetadata', function () {
