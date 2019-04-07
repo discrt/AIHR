@@ -500,7 +500,7 @@
 					</div>
 					<center>
 						<br>
-						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 75%; height: auto;" controls controlsList="nodownload" preload="none">
+						<video id="myVideo" controls autoplay loop class="myvideo" style="width: 75%; height: auto;" controls controlsList="nodownload" preload="none" loop="false">
 							<source id="mp4_src" src="videos/eng.mp4" type="video/mp4">
 						</video>
 						<button onclick="myFunction()" type="button" id="buttonLang" class="btn-block btn-info">Listen in हिंदी</button>
@@ -531,6 +531,15 @@
 								vid.currentTime = currentlPlayingTime;
 							}, false);
 						}
+						document.getElementById("myVideo").addEventListener('ended', function(e) {
+       						 alert('The End');
+   						 });
+							videos = document.querySelectorAll("video");
+							for (video of videos)
+							{
+								video.pause();
+							}
+
 						</script>
 					</center>
 		</div>
